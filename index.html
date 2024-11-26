@@ -9,10 +9,10 @@
 
     <script type="text/javascript">
         // Set the base URL you want to redirect to
-        var redirectUrl = "https://square-star-6fb5.pagelink.workers.dev?cfg=Mission&qrc=";
+        var redirectUrl = "https://square-star-6fb5.pagelink.workers.dev/?cfg=Mission&qrc=";
 
         // Get the current URL's fragment (everything after #)
-        var fragment = window.location.hash;
+        var fragment = window.location.hash.substring(1); // Remove the '#' symbol
 
         // If there's a fragment, append it to the redirect URL
         if (fragment) {
